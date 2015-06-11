@@ -1,0 +1,38 @@
+Name: datomic
+
+Cartridge-Short-Name: DATOMICPRO
+Cartridge-Version: '0.0.1'
+Cartridge-Vendor: monjohn
+
+Display-Name: Datomic Pro
+Description: "The fully transactional, cloud-ready, distributed database."
+
+Version: '0.9.5173'
+Website: http://www.datomic.com
+
+Categories:
+  - service
+  - web_framework
+  - clojure
+  - database
+
+Provides:
+  - clojure-1.6.0
+  - datomic
+
+Scaling:
+  Min: 1
+  Max: -1
+
+Endpoints:
+  - Private-IP-Name:   HTTP_IP
+    Private-Port-Name: HTTP_PORT
+    Private-Port:      8080
+    Public-Port-Name:  PROXY_HTTP_PORT
+    Mappings:
+      - Frontend:      ""
+        Backend:       ""
+        Options:       { websocket: false }
+
+Source-Url: https://github.com/monjohn/datomic-pro-cartridge.git
+
