@@ -9,3 +9,6 @@ mkdir -p $M2_REPO
 wget https://raw.github.com/technomancy/leiningen/stable/bin/lein -O bin/lein
 
 chmod +x bin/lein
+
+echo "host=${OPENSHIFT_DATOMICPRO_HTTP_IP}" > hostIp.txt
+
