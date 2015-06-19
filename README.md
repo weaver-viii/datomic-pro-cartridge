@@ -13,7 +13,7 @@ Create new app on Openshift running Datomic by typing the following into the ter
 
 ```
 
-
+rhc app-create mydatomproapp https://raw.githubusercontent.com/monjohn/datomic-pro-cartridge/master/metadata/manifest.yml 
 
 
 ```
