@@ -6,11 +6,10 @@ export M2_REPO="${OPENSHIFT_DATOMICPRO_DIR}/maven"
 mkdir -p $LEIN_HOME
 mkdir -p $M2_REPO
 
-wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein -O bin/lein
+wget https://raw.github.com/technomancy/leiningen/stable/bin/lein -O bin/lein
 
 chmod +x bin/lein
 
 echo "host=${OPENSHIFT_DATOMICPRO_HTTP_IP}" > hostIp.txt
 echo "In your properties file, set the port= to the following ip address: "
 echo "host=${OPENSHIFT_DATOMICPRO_HTTP_IP}" 
-
