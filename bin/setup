@@ -6,7 +6,7 @@ export M2_REPO="${OPENSHIFT_DATOMICPRO_DIR}/maven"
 mkdir -p $LEIN_HOME
 mkdir -p $M2_REPO
 
-wget https://raw.github.com/technomancy/leiningen/stable/bin/lein -O bin/lein
+wget https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein -O bin/lein
 
 chmod +x bin/lein
 
